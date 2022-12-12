@@ -72,7 +72,7 @@ const Login = () => {
 
   const getStoredData = () => {
     axios
-      .get(`https://ashish-json-api.herokuapp.com/registerData`)
+      .get(`https://creepy-seal-dungarees.cyclic.app/registerData`)
       .then((r) => {
         setStoredData(r.data);
       })
@@ -83,6 +83,7 @@ const Login = () => {
   useEffect(() => {
     getStoredData();
   }, []);
+
   return (
     <div className={styles.main}>
       <div className={styles.milaap_logo_mobile_view}>
