@@ -3,7 +3,7 @@ import * as types from "./actionType";
 const registerData = (payload) => (dispatch) => {
   dispatch({ type: types.USER_SIGNUP_REQUEST });
   return axios
-    .post(`https://creepy-seal-dungarees.cyclic.app/registerData`, payload)
+    .post(`https://json-server-javascript.onrender.com/registerData`, payload)
     .then((r) => {
       dispatch({ type: types.USER_SIGNUP_SUCCESS, payload: r.data });
     })

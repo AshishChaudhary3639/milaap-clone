@@ -72,7 +72,7 @@ const Login = () => {
 
   const getStoredData = () => {
     axios
-      .get(`https://creepy-seal-dungarees.cyclic.app/registerData`)
+      .get(`https://json-server-javascript.onrender.com/registerData`)
       .then((r) => {
         setStoredData(r.data);
       })
